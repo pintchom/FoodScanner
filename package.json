@@ -1,0 +1,27 @@
+{
+  "name": "foodscanner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pintchom/FoodScanner.git"
+  },
+  "author": "Max Pintchouk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pintchom/FoodScanner/issues"
+  },
+  "homepage": "https://github.com/pintchom/FoodScanner#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "node": "^22.11.0",
+    "openai": "^4.71.1",
+    "sharp": "^0.33.5"
+  }
+}
