@@ -86,8 +86,8 @@ The application automatically saves results to `csv_data/results.csv` with the f
 - express: Web server framework
 - axios: HTTP client
 - openai: OpenAI API client
-- multer: File upload handling
-- sharp: Image processing
+- multer: File upload handling ONLY NEEDED IF NOT USING IMAGE URL
+- sharp: Image processing ONLY NEEDED IF NOT USING IMAGE URL
 
 ## License
 
