@@ -7,6 +7,7 @@ FoodScanner is a Node.js application that analyzes food images and reports to de
 - Node.js (v22.11.0 or later)
 - npm
 - OpenAI API key
+- Note: Important to use gpt-4-turbo since other gpt models don't have vision capability (image interperetation)
 
 ## Installation
 
