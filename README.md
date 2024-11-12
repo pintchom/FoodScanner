@@ -11,13 +11,15 @@ FoodScanner is a Node.js application that analyzes food images and reports to de
 ## Installation
 
 1. Clone the repository:
-
+'''bash
 git clone https://github.com/pintchom/FoodScanner.git
 cd FoodScanner
+'''
 
-2. Install dependencies:
-
+3. Install dependencies:
+'''bash
 npm install
+'''
 
 3. Set up environment variables:
 Create a `.env` file in the root directory and add your OpenAI API key:
