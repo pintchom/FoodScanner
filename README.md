@@ -10,28 +10,34 @@ FoodScanner is a Node.js application that analyzes food images and reports to de
 
 ## Installation
 
-1. Clone the repository:
-'''bash
+1. Clone the repository
+
+```bash
 git clone https://github.com/pintchom/FoodScanner.git
 cd FoodScanner
-'''
+```
 
 3. Install dependencies:
-'''bash
+
+```bash
 npm install
-'''
+```
 
 3. Set up environment variables:
 Create a `.env` file in the root directory and add your OpenAI API key:
 
+```bash
 OPENAI=your_openai_api_key_here
 PORT=3000 # Optional, defaults to 3000
+```
 
 ## Usage
 
 1. Start the server:
 
+```bash
 node server.js
+```
 
 2. The server will be running at `http://localhost:3000`
 
@@ -42,14 +48,17 @@ Analyzes an image and report for the presence of seed oils.
 
 **Request Body:**
 
+```json
 {
 "IMAGE_URL": "https://your-image-url.com/image.jpg",
 "OIL_REPORT": "Description or report about the food",
 "ID": "UNIQUE_IDENTIFIER"
 }
+```
 
 **Response:**
 
+```json
 {
 "success": true,
 "report": "Original report text",
@@ -57,6 +66,7 @@ Analyzes an image and report for the presence of seed oils.
 "decision": true/false,
 "csvOutput": "CSV formatted string of the results"
 }
+```
 
 
 ### CSV Output
