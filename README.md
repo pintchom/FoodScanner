@@ -1,7 +1,7 @@
 # FoodScanner
 
 FoodScanner is a Node.js application that analyzes food images and reports to determine the presence of seed oils in food. It uses OpenAI's GPT-4 Vision API to process images and provide detailed analysis.
-
+Main functionality in server.js, model.ts is used just to mock data for app functionality - no relevance to seed oil analyzer script. 
 ## Prerequisites
 
 - Node.js (v22.11.0 or later)
