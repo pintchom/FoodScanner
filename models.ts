@@ -48,7 +48,7 @@ class Report {
     this.user = user; 
     this.datePosted = new Date(datePosted);
     this.stars = stars;
-    this.images = Array.isArray(images) ? images : [];
+    this.images = Array.isArray(images) ? images : []; // storing UUID's : assuming pulling images from dataset and upload is handled on client side 
     this.heading = String(heading);
     this.description = String(description);
     this.likes = likes || 0;
@@ -70,13 +70,26 @@ class Report {
     this.likes += 1;
   }
 
-  markInaccurate() {
+  decrementLikes() {
+    this.likes -= 1;
+  }
+
+  incrementInaccurate() {
     this.inaccurate += 1;
   }
 
-  markNotHelpful() {
+  decrementInaccurate() {
+    this.inaccurate -= 1;
+  }
+
+  incrementNotHelpful() {
     this.notHelpful += 1;
   }
+
+  decrementNotHelpful() {
+    this.notHelpful -= 1;
+  }
+
 }
 
 class Restaurant {
